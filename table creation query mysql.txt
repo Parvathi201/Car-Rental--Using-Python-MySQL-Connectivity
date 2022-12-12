@@ -1,0 +1,50 @@
+create table carinfo
+(carno int not null primary key,
+companyname char(15),
+carmodelname char(15) not null,
+yearofmanu date,
+rentperday float not null,
+rentpermonth float,
+advanceamount float,
+status char(20) not null);
+
+create table customerinfo
+(firstname char(30) not null,
+lastname char(30),
+address char(50),
+phoneno int not null,
+nationality char(50),
+licenseno int not null primary key,
+username varchar(20) not null unique,
+password varchar(20) not null,
+carbooked int);
+
+insert into carinfo(carno,companyname,carmodelname,rentperday,rentpermonth,advanceamount,status) values
+(5674,"MITSUBISHI","MIRAGE",1000,2000,1000,"Not Available");
+insert into carinfo(carno,companyname,carmodelname,rentperday,rentpermonth,advanceamount,status) values
+(8524,"MAHINDRA","SCORPIO",1000,2000,1500,"Available");
+insert into carinfo(carno,companyname,carmodelname,rentperday,rentpermonth,advanceamount,status) values
+(9654,"TOYATO","YARIS,500,1000,500,"Available");
+
+(carno,companyname,carmodelname,rentperday,rentpermonth,advanceamount,status)
+
+insert into customerinfo (firstname,lastname,phoneno,nationality,licenseno,username,password) values
+("Gaurav","Krishna",0508973583,"Indian",5683,"Gaura@123","123@xyz");
+insert into customerinfo values
+("Anil","Shankar","shabiya-11,Mussafah",0506456983,"Indian",8563,"lina@123","123@x",10987);
+insert into customerinfo values
+("Jithu","John","MBZ",0505852483,"Indian",5963,"G@123","1@xyz",5674);
+insert into customerinfo(firstname,lastname,address,phoneno,licenseno,username,password) values
+("Henry","Stark","Mushrif",0505985288,"Canadian",9658,"henry@123","123@xyz");
+insert into customerinfo (firstname,phoneno,nationality,licenseno,username,password) values
+("James",0508965483,"Filipino",3568,"jamesu","iamfil@1");
+insert into customerinfo(firstname,address,phoneno,nationality,licenseno,username,password) values
+("Tony","Al-Dhafra",0501684855,"Austrailia",9852,"r@tony","12_tony");
+insert into customerinfo (firstname,lastname,address,phoneno,licenseno,username,password,carbooked) values
+("Swetha","Murthy","Dehra",0506854268,9752,"swets@123","lmn@123");
+insert into customerinfo(firstname,lastname,address,phoneno,licenseno,username,password) values
+("Joan","Maria","Baniyas",0507621868,"American",5628,"joans","joanm");
+insert into customerinfo(firstname,lastname,address,phoneno,licenseno,username,password) values
+("Akash","Krishna",0505262489,"Indian",3658,"akash@k","kichu123");
+insert into customerinfo(firstname,lastname,address,phoneno,licenseno,username,password) values
+("Alex","Andrew","Liwa",0505698324,"Nepali",4326,"alex@ndrew","alexi");
