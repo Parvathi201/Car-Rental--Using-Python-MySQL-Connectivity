@@ -1,16 +1,16 @@
 import time
 import mysql.connector as myc
 global mycon,mycursor
-mycon=myc.connect(host="localhost",user="root",passwd="1234",database="temptravel")
+mycon=myc.connect(host="localhost",user="root",passwd="1234",database="CarGo")
 mycursor=mycon.cursor()
 def introduction():
     text='''
-                                      WELCOME TO TEMPTRAVEL
+                                      WELCOME TO CarGo
                                                 -best car rental service
-    TempTravel was established in 1989, as a part of L&M Enterprises – a progressive and diversified Group.
-    TempTravel license is owned by Mr.Deepak Shah and under his Chairmanship, 
+    CarGo was established in 1989, as a part of L&M Enterprises – a progressive and diversified Group.
+    CarGo license is owned by Mr.Deepak Shah and under his Chairmanship, 
     We have been serving its clientele in the UAE with regards to their short and long term car rental needs for more than 32 years.
-    TempTravel Car Rental is one of the leading international car rental companies with headquarters in India, Established in 1958.
+    CarGo Car Rental is one of the leading international car rental companies with headquarters in India, Established in 1958.
     With a fleet size in excess of 900,000 and staff strength of over 8000, operates in 80 countries and 500 locations world wide.
                     Call us directly for best rates and offers
                             ABU-DHABI : 0566474752
